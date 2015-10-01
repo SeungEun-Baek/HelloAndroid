@@ -26,7 +26,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="other"
+        android:text="아더"
         android:id="@+id/button_other" />
 
     <Button
@@ -34,6 +34,20 @@
         android:layout_height="wrap_content"
         android:text="caller"
         android:id="@+id/button_caller" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="linear"
+        android:id="@+id/button5"
+        android:onClick="toLinear" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="relative"
+        android:id="@+id/button6"
+        android:onClick="toRelative" />
 
     <TextView
         android:layout_width="wrap_content"

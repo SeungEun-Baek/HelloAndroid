@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.method.CharacterPickerDialog;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -39,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button_caller).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_CALL, Uri.parse("tel:010-9999-9999")));
+                startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse("tel:01099999999")));
             }
         });
         findViewById(R.id.button_other).setOnClickListener(new View.OnClickListener() {
@@ -71,5 +70,14 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void toLinear(View view) {
+        startActivity(new Intent(this, LinearActivity.class));
+    }
+
+
+    public void toRelative(View view) {
+        startActivity(new Intent(this, RelativeActivity.class));
     }
 }

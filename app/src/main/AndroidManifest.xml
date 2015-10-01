@@ -20,6 +20,14 @@
             android:name=".OtherActivity"
             android:label="@string/title_activity_other" >
         </activity>
+        <activity
+            android:name=".LinearActivity"
+            android:label="@string/title_activity_linear" >
+        </activity>
+        <activity
+            android:name=".RelativeActivity"
+            android:label="@string/title_activity_relative" >
+        </activity>
     </application>
 
 </manifest>
